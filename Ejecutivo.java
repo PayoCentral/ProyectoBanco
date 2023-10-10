@@ -1,7 +1,6 @@
-public class Ejecutivo extends Trabajador{
-
+public class Ejecutivo extends Empleado{
 public Ejecutivo (String nombre, String telefono, String nss) {
-        super(nombre, telefono, nss)
+        super(nombre, telefono, nss);
 }
 
 
