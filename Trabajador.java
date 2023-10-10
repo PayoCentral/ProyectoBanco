@@ -2,7 +2,7 @@ class Trabajador {
     private String nombre;
     private String cargo;
     private String telefono;
-    private String nss;
+    private int nss;
 
     public Trabajador(String nombre, String cargo, String telefono, String nss) {
         this.nombre = nombre;
@@ -23,7 +23,7 @@ class Trabajador {
         return telefono;
     }
     
-    public String getNss() {
+    public int getNss() {
         return nss;
     }
 }
