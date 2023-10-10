@@ -1,22 +1,16 @@
-class Trabajador {
+class Empleado {
     private String nombre;
-    private String cargo;
     private String telefono;
     private int nss;
 
-    public Trabajador(String nombre, String cargo, String telefono, String nss) {
+    public Trabajador(String nombre, String telefono, String nss) {
         this.nombre = nombre;
-        this.cargo = cargo;
         this.telefono = telefono;
         this.nss = nss;
     }
 
     public String getNombre() {
         return nombre;
-    }
-
-    public String getCargo() {
-        return cargo;
     }
 
     public String getTelefono() {
