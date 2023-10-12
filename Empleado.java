@@ -1,12 +1,10 @@
 public class Empleado {
     private String nombre;
-    private String telefono;
+    private long telefono;
     private int idempl;
-    private float sueldo;
-    private float salariomin;
     private int nss;
 
-    public Empleado(String nombre, String telefono,int idempl, float sueldo, float salariomin, int nss) {
+    public Empleado(String nombre, String telefono,int idempl,  int nss) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.idempl = idempl;
@@ -30,8 +28,8 @@ public class Empleado {
         return idempl; 
     }
 
-    public float getSueldo(){
-        return sueldo;
+    public float calcularPago(){
+        return 00; //Para calcular pagos
     }
 
     public float getSalariomin(){
