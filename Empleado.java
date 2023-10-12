@@ -2,11 +2,11 @@ public class Empleado {
     private String nombre;
     private String telefono;
     private int idempl;
-    private Float sueldo;
-    private Float salariomin;
+    private float sueldo;
+    private float salariomin;
     private int nss;
 
-    public Trabajador(String nombre, String telefono,int idempl, Float sueldo, Float salariomin, int nss) {
+    public Empleado(String nombre, String telefono,int idempl, float sueldo, float salariomin, int nss) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.idempl = idempl;
@@ -25,5 +25,16 @@ public class Empleado {
     
     public int getNss() {
         return nss;
+    }
+    public int getIdempl(){
+        return idempl; 
+    }
+
+    public float getSueldo(){
+        return sueldo;
+    }
+
+    public float getSalariomin(){
+        return salariomin;
     }
 }
