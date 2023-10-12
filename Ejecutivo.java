@@ -1,9 +1,21 @@
 public class Ejecutivo extends Empleado{
-public Ejecutivo (String nombre, String telefono,int idempl, float sueldo, float salariomin, int nss){
-super (nombre, telefono, idempl, 5*salariomin, salariomin, nss);
-       //lo de 5 por saliario min seria el sueldo de el ejecutivo
+private int numOficina;
+private int numEjecutivo;
+public double sueldo;
+public double impuesto;
+public Ejecutivo (String nombre, long telefono,int nO, float nE, double sueldo, double impuesto){
+numOficina=nO;
+numEjecutivo=nE;
+this.sueldo=sueldo;
+this.impuesto=sueldo*0.1;
+}
+       public int getnumOficina(){
+       return numOficina;
        }
-       public float calcularSalarioTotal(){
-              return getSueldo();
-        }
+       public int getnumEjecutivo(){
+       return numEjecutivo;
+       }
+       public double calcularPago(){
+              return (sueldo-impuesto)*14;
+       }
 }
