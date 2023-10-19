@@ -1,24 +1,20 @@
 public class Empleado {
-    private String nombre;
-    private long telefono;
-    private int idempl;
-    private int nss;
+    protected String nombre;
+    protected int idempl;
+    protected int nss;
+    public float salariomin;
+    public float impuesto;
 
-    public Empleado(String nombre, String telefono,int idempl,  int nss) {
+    public Empleado(String nombre,int idempl,  int nss, float salariomin, float impuesto) {
         this.nombre = nombre;
-        this.telefono = telefono;
         this.idempl = idempl;
-        this.sueldo = sueldo;
-        this.salariomin = salariomin;
         this.nss = nss;
+        this.salariomin = salariomin;
+        this.impuesto = salariomin*.19;
     }
 
     public String getNombre() {
         return nombre;
-    }
-
-    public String getTelefono() {
-        return telefono;
     }
     
     public int getNss() {
@@ -29,8 +25,8 @@ public class Empleado {
     }
 
     public float calcularPago(){
-        return 00; //Para calcular pagos
-    }
+        return (salariomin-impuesto)*15;
+      }
 
     public float getSalariomin(){
         return salariomin;

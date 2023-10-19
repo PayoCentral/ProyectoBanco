@@ -1,16 +1,19 @@
 public class Gerente extends Empleado {
     private int numOficina;
     private int numGerente;
-    private double sueldo; 
-    private double impuesto; 
+    private float sueldo_gerente;
+    
+public Gerente(){
+    this("", 0, 0, 0f, 0f, 0,0,0f,0);
+}
 
-public Gerente(String nombre, long telefono, int n, int nn,
- double sueldo, double impuesto){
-    super(nombre,telefono); //llamada al constructor de la clase madre 
-numOficina= n; 
-numGerente= nn; 
-this.sueldo=sueldo; 
-this.impuesto=sueldo*0.1; 
+public Gerente(String nombre,int idempl,  int nss, float salariomin, float impuesto, 
+int numOficina, int numGerente, float sueldo_gerente, int telgerente){
+    super(nombre, telefono, idempl, nss, salariomin, impuesto); 
+this.numOficina=numOficina;
+this.numGerente=numGerente;
+this.sueldo_gerente=sueldo_gerente;
+this.telgerente=telgerente;
 
 }
 
@@ -21,7 +24,7 @@ public int getnumGerente(){
     return numGerente; 
 }
 //calcula pago 
-public double calcularPago(){
-    return (sueldo-impuesto)*19;
+public float calcularPago(){
+    return (sueldo_gerente-impuesto)*15;
 }
 }

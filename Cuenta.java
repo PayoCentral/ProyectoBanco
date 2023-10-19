@@ -1,25 +1,25 @@
 public class Cuenta {
     private String numcuenta;
-    private Float saldo;
+    private float saldo;
     private String historialtrans;
     private String moneda;
 
-public Empleado(String numcuenta,Float saldo, String historialtrans, String moneda) {
+public Cuenta(String numcuenta,float saldo, String historialtrans, String moneda) {
 this.numcuenta = numcuenta;
 this.saldo = saldo;
 this.historialtrans = historialtrans;
 this.moneda = moneda;
 }
-public String getNumcuenta;{
+public String getNumcuenta(){
     return numcuenta;
 }
-public Float getSaldo;{
+public float getSaldo(){
     return saldo;
 }
-public String getHistorialtrans;{
+public String getHistorialtrans(){
     return historialtrans;
 }
-public String getMoneda;{
+public String getMoneda(){
     return moneda;
 }
 } 
