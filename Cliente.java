@@ -1,3 +1,4 @@
+public class Cliente{ //Creación de la clase 
 private int numcliente;
 private String nombre;
 private String rfc;
@@ -30,4 +31,5 @@ return tipo_persona;
 
 public String getFecha_alta(){
 return fecha_alta;
+}
 }
