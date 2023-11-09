@@ -1,4 +1,4 @@
-public class Credito extends Servicios(){
+public class Credito extends Servicios{ //Corrección de Variable
     private Interger folio;
     private Float monto;
     private String fecha_pago;
