@@ -2,6 +2,10 @@ public class Ejecutivo extends Empleado{
 private int numOficina;
 private int numEjecutivo;
 public float sueldo_ejecutivo;
+    public Ejecutivo(){
+       this ( "" , 0 , 0 , 0f , 0f , 0 , 0f , 0f );
+    }
+    
     
 public Ejecutivo (String nombre,int idempl,  int nss, float salariomin, float impuesto ,
 int numOficina, float numEjecutivo, float sueldo){
