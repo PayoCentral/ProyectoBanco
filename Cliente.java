@@ -56,4 +56,12 @@ public static String ingfechaAltaCliente(){
 public void ImprimeDatosCliente(){
 JOptionPane.showMessageDialog(null, "Nombre del cliente "+getNombre()+"\nNumero de cliente "+getNumcliente()+"\nRfc del cliente"+getRfc()+"\n Tipo de persona "+getTipo_persona()+"\nFecha de alta del Cliente "+getFecha_alta());
 }
+public static Cliente ingDatosCliente(){
+String nombre=Cliente.ingnomCliente();
+int numcliente=Cliente.ingnumCliente();
+String rfc=Cliente.ingrfcCliente();
+String tipo_persona=Cliente.ingtipoPersona();
+String fecha_alta=Cliente.ingfechaAltaCliente();
+return new Cliente(numcliente, nombre,rfc, tipo_persona ,fecha_alta );
+}
 }
