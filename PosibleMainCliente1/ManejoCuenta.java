@@ -1,25 +1,25 @@
 import javax.swing.JOptionPane;
 
-public class ManejoCuenta {
+public class ManejoCuenta{
 
     public static void main(String[] args) {
         //Creacion de clientes
-      Cliente a= new Cliente(202322522, 2023);
+      Cliente a= new Cliente(Integer.parseInt(JOptionPane.showInputDialog("Introduce tu número de cuenta")));
       a.getNumcliente(); 
-      a.getContraseña(); 
+
       if (a.getNumcliente () == 202322522){
-        System.out.println("Bienvenido Saúl ");
-                if(a.getContraseña()== 2023){
-                    System.err.println("Que operación quiere realizar");
+              Cliente b= new Cliente(Long.parseLong(JOptionPane.showInputDialog("Introduce tu contraseña"))); 
+      b.getContraseña();
+                if(b.getContraseña()== 2023){
+                    System.out.println("Que operación quiere realizar");
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "La contraseña es incorrecta");
                 }
       }
       else {
-        System.out.println("Usuario no existente");
+        JOptionPane.showMessageDialog(null, "Usuario NO existente");
       }
-
 }
 } 
     
