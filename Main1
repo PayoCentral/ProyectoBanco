@@ -1,0 +1,4 @@
+public class Main {
+public static void main(String[] args) {
+// Crear objetos de la clase Empleado
+Empleado empleado1 = new Empleado("Juan Perez", "123456789", 1000);
