@@ -48,6 +48,6 @@ public String getMoneda(){
         return new Cuenta(numCuenta, saldo, historialTransacciones, moneda);
     }
      public void imprimeDatosCuenta(){
-     JOptionPane.showMessageDialog(null, "Numero de la cuenta"+getNumcuenta()+"\nSaldo de la Cuenta "+getSaldo()+" "+getMoneda()+"\nHistorial de transacciones"+getHistorialtrans()+"\nMoneda+ "+getMoneda());
+     JOptionPane.showMessageDialog(null, "Numero de la cuenta"+getNumcuenta()+"\nSaldo de la Cuenta "+getSaldo()+" "+getMoneda()+"\nHistorial de transacciones"+getHistorialtrans()+"\nMoneda "+getMoneda());
      }
 } 
