@@ -38,11 +38,11 @@ public static int ingnumCliente(){
   return numCliente;
 }
 public static String ingnomCliente(){
-  String nombre=JOptionPane.showInputDialog("Ingresa el numero de cliente");
+  String nombre=JOptionPane.showInputDialog("Ingresa el nombre del cliente");
   return nombre;
 }
 public static String ingrfcCliente(){
-  String rfc=JOptionPane.showInputDialog("Ingresa el numero de cliente");
+  String rfc=JOptionPane.showInputDialog("Ingresa el rfc de cliente");
   return rfc;
 }
 public static String ingtipoPersona(){
@@ -50,7 +50,7 @@ public static String ingtipoPersona(){
   return tipo_persona;
 }
 public static String ingfechaAltaCliente(){
-  String fecha_alta=JOptionPane.showInputDialog("Ingresa el numero de cliente");
+  String fecha_alta=JOptionPane.showInputDialog("Ingresa la fecha de alta de cliente");
   return fecha_alta;
 }
 public void ImprimeDatosCliente(){
