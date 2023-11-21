@@ -9,7 +9,7 @@ public CuentaNomina(){
 public CuentaNomina(String numcuenta, float saldo, String historialtrans, String moneda, String nombre_trabajo, float monto_nomina){
     super(numcuenta, saldo, historialtrans, moneda); 
 this.nombre_trabajo = nombre_trabajo;
-this.monto_nomina = monto_salario;
+this.monto_nomina = monto_nomina;
 }
 public String getNombre_trabajo(){
     return nombre_trabajo;
