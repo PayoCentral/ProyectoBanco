@@ -1,0 +1,26 @@
+public CajeroConRetiros(String nombre, double saldo) {
+        super(nombre, saldo);
+        this.retiros = new int[10]; // Por ejemplo, un array de 10 retiros
+        this.contadorRetiros = 0;
+    }
+
+
+    public void realizarRetiro(int monto) {
+        if (monto > 0 && monto <= getSaldo()) {
+            setSaldo(getSaldo() - monto);
+            if (contadorRetiros < retiros.length) {
+                retiros[contadorRetiros] = monto;
+                contadorRetiros++;
+            } else {
+                System.out.println("No se pueden agregar más retiros. El array está lleno.");
+            }
+        } else {
+            // Manejar el caso en el que no hay suficiente saldo para el retiro
+            System.out.println("Saldo insuficiente para realizar el retiro de $" + monto);
+        }
+    }
+
+    public int[] obtenerRetiros() {
+        return retiros;
+    }
+}
