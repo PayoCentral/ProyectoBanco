@@ -1,9 +1,12 @@
-public CajeroConRetiros(String nombre, double saldo) {
-        super(nombre, saldo);
-        this.retiros = new int[10]; // Por ejemplo, un array de 10 retiros
-        this.contadorRetiros = 0;
-    }
+class CajeroConRetiros extends Cajero {
+    private int[] retiros;
+    private int contadorRetiros;
 
+         public CajeroConRetiros(double saldo) {
+                super(saldo);
+                this.retiros = new int[10]; // Por ejemplo, un array de 10 retiros
+                this.contadorRetiros = 0;
+    }
 
     public void realizarRetiro(int monto) {
         if (monto > 0 && monto <= getSaldo()) {
