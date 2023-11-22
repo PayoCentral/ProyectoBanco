@@ -5,7 +5,7 @@ public class Empleado {
     public double salariomin;
     public double impuesto;
 
-    public Empleado(String nombre,int idempl,  int nss, float salariomin, float impuesto) {
+    public Empleado(String nombre,int idempl,  int nss, double salariomin, double impuesto) {
         this.nombre = nombre;
         this.idempl = idempl;
         this.nss = nss;
