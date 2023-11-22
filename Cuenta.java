@@ -1,3 +1,11 @@
+package com.mycompany.manejocuenta;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Oscar
+ */
 public class Cuenta {
     private String numcuenta;
     private float saldo;
@@ -22,7 +30,7 @@ public String getHistorialtrans(){
 public String getMoneda(){
     return moneda;
 }
-        public static String ingresarNumeroCuenta() {
+    public static String ingresarNumeroCuenta() {
         return JOptionPane.showInputDialog("Ingrese el número de cuenta:");
     }
 
@@ -48,6 +56,6 @@ public String getMoneda(){
         return new Cuenta(numCuenta, saldo, historialTransacciones, moneda);
     }
      public void imprimeDatosCuenta(){
-     JOptionPane.showMessageDialog(null, "Numero de la cuenta"+getNumcuenta()+"\nSaldo de la Cuenta "+getSaldo()+" "+getMoneda()+"\nHistorial de transacciones"+getHistorialtrans()+"\nMoneda "+getMoneda());
+     JOptionPane.showMessageDialog(null, "Numero de la cuenta"+getNumcuenta()+"\nSaldo de la Cuenta "+getSaldo()+" "+getMoneda()+"\nHistorial de transacciones"+getHistorialtrans()+"\nMoneda+ "+getMoneda());
      }
 } 
