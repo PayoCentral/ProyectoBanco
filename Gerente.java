@@ -1,7 +1,7 @@
 public class Gerente extends Empleado {
     private int numOficina;
     private int numGerente;
-    private float sueldo_gerente;
+    private double sueldo_gerente;
     
     public Gerente(){
     this("", 0, 0, 0f, 0f, 0,0,0f,0);
@@ -17,6 +17,7 @@ this.telgerente=telgerente;
 
 }
 
+
 public int getnumOficina(){
     return numOficina;
 }
@@ -24,7 +25,7 @@ public int getnumGerente(){
     return numGerente; 
 }
 //calcula pago 
-public float calcularPago(){
+public double calcularPago(){
     return (sueldo_gerente-impuesto)*15;
 }
 }

@@ -2,8 +2,8 @@ public class Empleado {
     protected String nombre;
     protected int idempl;
     protected int nss;
-    public float salariomin;
-    public float impuesto;
+    public double salariomin;
+    public double impuesto;
 
     public Empleado(String nombre,int idempl,  int nss, float salariomin, float impuesto) {
         this.nombre = nombre;
@@ -24,11 +24,11 @@ public class Empleado {
         return idempl; 
     }
 
-    public float calcularPago(){
+    public double calcularPago(){
         return (salariomin-impuesto)*15;
       }
 
-    public float getSalariomin(){
+    public double getSalariomin(){
         return salariomin;
     }
 }
