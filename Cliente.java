@@ -1,4 +1,8 @@
-import javax.Swing.JOptionPane;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Oscar
+ */
 public class Cliente{ //Creación de la clase 
 private int numcliente;
 private String nombre;
@@ -54,7 +58,7 @@ public static String ingfechaAltaCliente(){
   return fecha_alta;
 }
 public void ImprimeDatosCliente(){
-JOptionPane.showMessageDialog(null, "Nombre del cliente "+getNombre()+"\nNumero de cliente "+getNumcliente()+"\nRfc del cliente"+getRfc()+"\n Tipo de persona "+getTipo_persona()+"\nFecha de alta del Cliente "+getFecha_alta());
+JOptionPane.showMessageDialog(null, "Nombre del cliente "+getNombre()+"\nNumero de cliente "+getNumcliente()+"\nRfc del cliente "+getRfc()+"\n Tipo de persona "+getTipo_persona()+"\nFecha de alta del Cliente "+getFecha_alta());
 }
 public static Cliente ingDatosCliente(){
 String nombre=Cliente.ingnomCliente();
