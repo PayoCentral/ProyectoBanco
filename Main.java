@@ -1,10 +1,8 @@
-import javax.swing.JOptionPane*;
+import javax.swing.JOptionPane;
 
-public class MainPrincipal {
-
+public class Main{
     public static void main(String[] args) {
         int opcion = 0;
-
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(
                 "Seleccione una opción: \n" +
@@ -13,8 +11,6 @@ public class MainPrincipal {
                 "3. Opción 3 \n" +
                 "4. Salir"
             ));
-
-            // Procesar la opción seleccionada
             switch (opcion) {
                 case 1:
                     // Ejecutar la acción de la opción 1

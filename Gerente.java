@@ -2,6 +2,7 @@ public class Gerente extends Empleado {
     private int numOficina;
     private int numGerente;
     private float sueldo_gerente;
+    
     public Gerente(){
     this("", 0, 0, 0f, 0f, 0,0,0f,0);
     }
