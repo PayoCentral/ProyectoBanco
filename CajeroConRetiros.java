@@ -18,7 +18,6 @@ class CajeroConRetiros extends Cajero {
                 System.out.println("No se pueden agregar más retiros. El array está lleno.");
             }
         } else {
-            // Manejar el caso en el que no hay suficiente saldo para el retiro
             System.out.println("Saldo insuficiente para realizar el retiro de $" + monto);
         }
     }
