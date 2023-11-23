@@ -8,7 +8,7 @@ public class Main{
                 "Seleccione una opción: \n" +
                 "1. Sistema para Empleados y Trabajadores \n" +
                 "2. Banca en línea (Clientes) \n" +
-                "3. Opción 3 \n" +
+                "3. Caja Multiusos \n" +
                 "4. Salir"
             ));
             switch (opcion) {
