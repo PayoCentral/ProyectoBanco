@@ -1,3 +1,4 @@
+public class Gerente extends Empleado{
 private int numOficina;
     private int numGerente;
     private float sueldo_gerente;
@@ -12,4 +13,4 @@ this.numGerente=numGerente;
 this.sueldo_gerente=sueldo_gerente;
 this.telgerente=telgerente;
 }
-    
+}   
