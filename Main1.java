@@ -13,7 +13,7 @@ public class PincipalTrabajador{
             trabajador [num] = new Empleado(JOptionPane.showInputDialog("Nombre"),Interger.parseInt(JOptionPane.showInputDialog("Idempl"),Interger.parseInt(JOptionPane.showInputDialog("Nss"),Double.parseDouble(JOptionPane.showInputDialog("Salariomin"),Double.parseDouble(JOptionPane.showInputDialog("Impuesto")));
              break;
           case 2: 
-            trabajador [num] = new Gerente(
+            trabajador [num] = new Gerente(Interger.parseInt(JOptionPane.showInputDialog("NumOficina"),Interger.parseInt(JOptionPane.showInputDialog("NumGerente"),
   
   
 
