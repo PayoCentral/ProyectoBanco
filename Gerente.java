@@ -1,31 +1,14 @@
-public class Gerente extends Empleado {
-    private int numOficina;
-    private int numGerente;
-    private double sueldo_gerente;
-    protected int telgerente;
+import javax.swing.JOptionPane;
+public class PrincipalEmpleado{
+    public static void main(String[] args){
+        Trabajador[] trabajador = new Trabajador[5];
+        int opc,i,num=0
+            int continuar;
+        do{
+            do{
+                String op= JOptionPane.showInputDialog("1: Empleado" + "\n" + "2 :Gerente" + "\n" + "3 :Ejecutivo");
+                opc = Interger.parseInt(op)
+                    switch(opc){
+                    case 1:
+                        trabajador [num]= new Empleado(JOptionPane.showInputDialog("Nombre
     
-    public Gerente(){
-    this("", 0, 0, 0f, 0f, 0,0,0f,0);
-    }
-
-public Gerente(String nombre,int idempl,  int nss, double salariomin, double impuesto, int numOficina, int numGerente, double sueldo_gerente,int telgerente){
-    super(nombre, idempl, nss, salariomin, impuesto); 
-this.numOficina=numOficina;
-this.numGerente=numGerente;
-this.sueldo_gerente=sueldo_gerente;
-this.telgerente=telgerente;
-
-}
-
-
-public int getnumOficina(){
-    return numOficina;
-}
-public int getnumGerente(){
-    return numGerente; 
-}
-//calcula pago 
-public double calcularPago(){
-    return (sueldo_gerente-impuesto)*15;
-}
-}
