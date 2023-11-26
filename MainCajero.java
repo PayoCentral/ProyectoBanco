@@ -30,10 +30,10 @@ public static void main(String[] args) {
                 cajero.retirar(cantidadRetiro);
                 break;
             case 4:
-                System.out.println("Saliendo del programa. ¡Hasta luego!");
+                System.out.println("Programa invalida");
                 break;
             default:
-                System.out.println("Opción no válida. Inténtalo de nuevo.");
+                System.out.println("Opción invalida, favor de reintentar.");
         }
 
     } while (opcion != 4);
