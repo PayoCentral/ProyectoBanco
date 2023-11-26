@@ -1,14 +1,15 @@
-import javax.swing.JOptionPane;
-public class PrincipalEmpleado{
-    public static void main(String[] args){
-        Trabajador[] trabajador = new Trabajador[5];
-        int opc,i,num=0
-            int continuar;
-        do{
-            do{
-                String op= JOptionPane.showInputDialog("1: Empleado" + "\n" + "2 :Gerente" + "\n" + "3 :Ejecutivo");
-                opc = Interger.parseInt(op)
-                    switch(opc){
-                    case 1:
-                        trabajador [num]= new Empleado(JOptionPane.showInputDialog("Nombre
+private int numOficina;
+    private int numGerente;
+    private float sueldo_gerente;
+    public Gerente(){
+    this("", 0, 0, 0f, 0f, 0,0,0f,0);
+    }
+public Gerente(String nombre,int idempl,  int nss, float salariomin, float impuesto, 
+int numOficina, int numGerente, float sueldo_gerente,int telgerente){
+    super(nombre, telefono, idempl, nss, salariomin, impuesto); 
+this.numOficina=numOficina;
+this.numGerente=numGerente;
+this.sueldo_gerente=sueldo_gerente;
+this.telgerente=telgerente;
+}
     
