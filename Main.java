@@ -47,7 +47,28 @@ public class Main{
                 }
                     
                     break;
-            
+            case 2:
+        Cuenta[] cuentas = new Cuenta[100];
+        int num = 0;
+        int continuar;
+
+        do {
+            cuentas[num] = Cuenta.ingresarDatosCuenta();
+            num++;  
+
+            continuar = JOptionPane.showConfirmDialog(null, "¿Desea añadir otra Cuenta?", "Recabando información", JOptionPane.YES_NO_OPTION);
+
+        } while (continuar == JOptionPane.YES_OPTION);
+
+        
+        for (int i = 0; i < num; i++) {
+            if (cuentas[i] != null) {
+                cuentas[i].imprimeDatosCuenta();
+            }
+        }    
+                    
+                    
+        break;
                 default:
                     break;
             }
