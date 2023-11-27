@@ -37,11 +37,11 @@ public class Main{
             JOptionPane.showMessageDialog(null,"Opcion Incorrecta");
             }
             } while((opc < 1) && (opc < 2) && (opc < 3));
-            num = num+1;
-            continuar = JOptionPane.showConfirmDialog(null,"¿Desea añadir otro Trabajador?","Generando información",JOptionPane.YES_NO_OPTION);
+            trab = trab+1;
+            siguiente = JOptionPane.showConfirmDialog(null,"¿Desea añadir otro Trabajador?","Generando información",JOptionPane.YES_NO_OPTION);
         } while
-        (continuar==JOptionPane.YES_NO_OPTION);
-        for (i=0;i<num;i++)
+        (siguiente==JOptionPane.YES_NO_OPTION);
+        for (i=0;i<trab;i++)
         {
             System.out.print(trabajador[i]);
             System.out.println(trabajador[i].calcularPago());
