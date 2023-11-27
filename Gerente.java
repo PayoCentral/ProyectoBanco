@@ -14,4 +14,16 @@ this.numGerente=numGerente;
 this.sueldo_gerente=sueldo_gerente;
 this.telgerente=telgerente;
 }
+    public int getnumOficina(){
+    return numOficina;
+}
+public int getnumGerente(){
+    return numGerente; 
+}
+    public float getsueldo_gerente(){
+        return sueldo_getente;
+    }
+    public int gettelgerente(){
+        return telgerente;
+    }
 }  
