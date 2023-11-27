@@ -21,7 +21,7 @@ public int getnumGerente(){
     return numGerente; 
 }
     public float getsueldo_gerente(){
-        return sueldo_getente;
+        return sueldo_gerente;
     }
     public int gettelgerente(){
         return telgerente;
