@@ -21,7 +21,7 @@ public class Main{
                 do{
                   do{
         String op = JOptionPane.showInpuntDialog(" 1:Empleado" + "\n" + " 2:Gerente" + "\n" + " 3:Ejecutivo");
-        opc = Interger.parseInt(op)
+        opc = Interger.parseInt(op);
           switch(operacion){
           case 1:
             trabajador [trab] = new Empleado(JOptionPane.showInputDialog("Nombre"),Interger.parseInt(JOptionPane.showInputDialog("Idempl"),Interger.parseInt(JOptionPane.showInputDialog("Nss"),Double.parseDouble(JOptionPane.showInputDialog("Salariomin"),Double.parseDouble(JOptionPane.showInputDialog("Impuesto"))))));
