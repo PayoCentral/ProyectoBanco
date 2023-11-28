@@ -113,4 +113,38 @@ public class Main{
         } 
          } while (opcion != 4);
 }
-}
+ int opcion;
+        do {
+            // Mostrar el menú
+            System.out.println("----- Menú del Cajero -----");
+            System.out.println("1. Consultar Saldo");
+            System.out.println("2. Retirar Dinero");
+            System.out.println("3. Depositar Dinero");
+            System.out.println("4. Salir");
+            System.out.print("Seleccione una opción: ");
+
+            // Leer la opción del usuario
+            opcion = scanner.nextInt();
+
+            // Realizar la operación correspondiente
+            switch (opcion) {
+                case 1:
+                    consultarSaldo();
+                    break;
+                case 2:
+                    retirarDinero();
+                    break;
+                case 3:
+                    depositarDinero();
+                    break;
+                case 4:
+                    System.out.println("Gracias por usar el cajero. ¡Hasta luego!");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    break;
+            }
+        } while (opcion != 4);
+
+        scanner.close();
+    }
