@@ -35,7 +35,7 @@ public class Main{
             default:
             JOptionPane.showMessageDialog(null,"Opcion Incorrecta");
             }
-            } while((opc < 1) && (opc < 2) && (opc < 3));
+            } while((opc < 1) &&  (opc < 3));
             trab = trab+1;
             siguiente = JOptionPane.showConfirmDialog(null,"¿Desea añadir otro Trabajador?","Generando información",JOptionPane.YES_NO_OPTION);
         } while
