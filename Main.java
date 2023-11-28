@@ -16,7 +16,6 @@ public class Main{
                 case 1:
                     // Ejecutar la acción de la opción 1
                     System.out.println("Has seleccionado el menú para Empleados y Trabajadores del Banco");
-                    break;
                     int opc,i,trab=0;
                     int siguiente;
                 do{
@@ -45,6 +44,8 @@ public class Main{
         {
             System.out.print(trabajador[i]);
             System.out.println(trabajador[i].calcularPago());
+                    break;
+                    
                                                                                                                                                             }
                 case 2:
                     // Ejecutar la acción de la opción 2
