@@ -1,8 +1,10 @@
 import javax.swing.JOptionPane;
 
+
 public class Main{
     public static void main(String[] args) {
         int opcion = 0;
+        int control = 0; 
         int operacion = 0; 
         do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(
@@ -16,11 +18,10 @@ public class Main{
                 case 1:
                     // Ejecutar la acción de la opción 1
                     System.out.println("Has seleccionado el menú para Empleados y Trabajadores del Banco");
-    
-    
-                    break;
+                     // Empleado
+                break; 
                     
-                                                                                                                                                            }
+                                                                                                                                         
                 case 2:
                     // Ejecutar la acción de la opción 2
                     System.out.println("Has seleccionado el menú para Clientes");
@@ -65,9 +66,9 @@ public class Main{
         } while (continuar == JOptionPane.YES_OPTION);
 
         
-        for (int i = 0; i < num; i++) {
-            if (cuentas[i] != null) {
-                cuentas[i].imprimeDatosCuenta();
+        for (int z = 0; z < num; z++) {
+            if (cuentas[z] != null) {
+                cuentas[z].imprimeDatosCuenta();
             }
         }    
                     
@@ -78,47 +79,38 @@ public class Main{
             }
             } while (operacion != 3); 
                 case 3:
-                System.out.println("Has seleccionado el menú para uso del Cajero, Caja Multiusos y Pago de Servicios");
+                System.out.println("Has seleccionado el menú para uso del Cajero, Caja Multiusos y Pago de Servicios"); 
+                   do {
+                    control = Integer.parseInt(JOptionPane.showInputDialog("Seleccione una operación de Cajero" + "\n" + "1. Consultar Saldo: " +
+                     "\n" + "2. Retirar Dinero: " + "\n" + "3.Depositar Dinero" + "\n" + "4.Salir"));  
+                       // Realizar la operación correspondiente
+                       switch (control) {
+
+                               //////////////////////////// Realizar los métodos de los case 
+                           case 1:
+                               //consultarSaldo(); 
+                               System.out.println("Hola");
+                               break;
+                           case 2:
+                               //retirarDinero();
+                               System.out.println("XD");
+                               break;
+                           case 3:
+                               //depositarDinero();
+                               System.out.println("Holy");
+                               break;
+                           case 4:
+                               System.out.println("Gracias por usar el cajero. ¡Hasta luego!");
+                               break;
+                           default:
+                               System.out.println("Opción no válida. Inténtelo de nuevo.");
+                               break;
+                       }
+                   } while (control != 4);
                     break;
-                case 4:
-                break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opción no válida");
         } 
          } while (opcion != 4);
 }
- int opcion;
-        do {
-            // Mostrar el menú
-            System.out.println("----- Menú del Cajero -----");
-            System.out.println("1. Consultar Saldo");
-            System.out.println("2. Retirar Dinero");
-            System.out.println("3. Depositar Dinero");
-            System.out.println("4. Salir");
-            System.out.print("Seleccione una opción: ");
-
-            // Leer la opción del usuario
-            opcion = scanner.nextInt();
-
-            // Realizar la operación correspondiente
-            switch (opcion) {
-                case 1:
-                    consultarSaldo();
-                    break;
-                case 2:
-                    retirarDinero();
-                    break;
-                case 3:
-                    depositarDinero();
-                    break;
-                case 4:
-                    System.out.println("Gracias por usar el cajero. ¡Hasta luego!");
-                    break;
-                default:
-                    System.out.println("Opción no válida. Inténtelo de nuevo.");
-                    break;
-            }
-        } while (opcion != 4);
-
-        scanner.close();
-    }
+}
