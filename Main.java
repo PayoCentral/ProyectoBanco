@@ -16,48 +16,8 @@ public class Main{
                 case 1:
                     // Ejecutar la acción de la opción 1
                     System.out.println("Has seleccionado el menú para Empleados y Trabajadores del Banco");
-    // Empleado
-    Empleado[] empleado = new Empleado[5];
-    Gerente[] gerente = new Gerente[5];
-    Ejecutivo[] ejecutivo = new Ejecutivo[5];
-
-    for (int i=0;i < empleado.length; i++) {
-      String nombreEmpleado = JOptionPane.showInputDialog("Ingresa el nombre del empleado" + (i + 1) + ":");    
-      int idemplEmpleado = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el idempl del empleado" + (i + 1) + ":"));
-      int nssEmpleado = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el nss del empleado" + (i + 1) + ":"));
-      double salariominEmpleado = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el salariomin del empleado" + (i + 1) + ":"));
-      double impuestoEmpleado = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el impuesto del empleado" + (i + 1) + ":"));
-      empleado[i] = new Empleado(nombreEmpleado, idemplEmpleado, nssEmpleado, salariominEmpleado, impuestoEmpleado);
-  }
-    for (int i = 0; i < gerente.length; i++){
-      int numOficinaGerente = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el numero de oficina" + (i + 1) + ":"));
-      int numGerentegGerente = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el numero de gerente" + (i+ 1) + ":"));
-      float sueldo_gerenteGerente = Float.parseFloat(JOptionPane.showInputDialog("Ingresa el sueldo del gerente" + (i + 1) + ":"));
-      int telgerenteGerente = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el telefono" + (i + 1) + ":"));
-      gerente[i] = new Gerente(null, numOficinaGerente, numGerentegGerente,sueldo_gerenteGerente,telgerenteGerente, telgerenteGerente, telgerenteGerente, sueldo_gerenteGerente, telgerenteGerente);
-    }
-    for (int i = 0; i < ejecutivo.length; i++){
-      int numOficinaEjecutivo = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el numero de oficina del ejecutivo" + (i + 1) + ":"));
-      int numEjecutivoEjecutivo = Interger.parseInt(JOptionPane.showInputDialog("Ingresa el numero de ejecutivo" + (i + 1) + ":"));
-      float sueldo_ejecutivoEjecutivo = Float.parseFloat(JOptionPane.showInputDialog("Ingresa el sueldo del ejecutivo" + (i + 1) + ":"));
-      ejecutivo[i] = new Ejecutivo(null, numOficinaEjecutivo,numEjecutivoEjecutivo,sueldo_ejecutivoEjecutivo, sueldo_ejecutivoEjecutivo, numEjecutivoEjecutivo, sueldo_ejecutivoEjecutivo, sueldo_ejecutivoEjecutivo);
-    String mensaje = "Informacion de los trabajadores:\n";
-    mensaje += "Empleado:\n";
-    for (Empleado empleados : empleado){
-      mensaje += empleado + "\n";
-    }
-    mensaje += "\nGerentes:\n";
-    for (Gerente gerentes : gerente){
-      mensaje += gerente + "\n";
-    }
-    mensaje += "\nEjecutivos:\n";
-    for (Ejecutivo ejecutivos : ejecutivo){
-      mensaje += ejecutivo + "\n";
-    }
-    JOptionPane.showMessageDialog(null, mensaje, "Informacion de trabajadores", JOptionPane.INFORMATION_MESSAGE);
-  }
-}
-}
+    
+    
                     break;
                     
                                                                                                                                                             }
