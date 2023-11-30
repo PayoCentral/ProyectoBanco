@@ -19,6 +19,61 @@ public class Main{
                     // Ejecutar la acción de la opción 1
                     System.out.println("Has seleccionado el menú para Empleados y Trabajadores del Banco");
                      // Empleado
+                    Empleado[] trabajador = new Empleado[5];
+        int opc, i, trabs = 0;
+        int siguiente;
+
+        do {
+            do {
+                String op = JOptionPane.showInputDialog(" 1:Empleado" + "\n" + " 2:Gerente" + "\n" + " 3:Ejecutivo");
+                opc = Integer.parseInt(op);
+                switch (opc) {
+                    case 1:
+                        trabajador[trabs] = new Empleado(
+                                JOptionPane.showInputDialog("Nombre"),
+                                Integer.parseInt(JOptionPane.showInputDialog("IdEmpleado")),
+                                Integer.parseInt(JOptionPane.showInputDialog("Nss")),
+                                Double.parseDouble(JOptionPane.showInputDialog("SalarioMin")
+                                ), Double.parseDouble(JOptionPane.showInputDialog("Impuesto")));
+                        break;
+                    case 2:
+                        trabajador[trabs] = new Gerente(
+                                JOptionPane.showInputDialog("Nombre"),
+                                Integer.parseInt(JOptionPane.showInputDialog("IdEmpleado")),
+                                Integer.parseInt(JOptionPane.showInputDialog("Nss")),
+                                (float) Double.parseDouble(JOptionPane.showInputDialog("SalarioMin")
+                                ), (float) Double.parseDouble(JOptionPane.showInputDialog("Impuesto")),
+                                Integer.parseInt(JOptionPane.showInputDialog("NumOficina")),
+                                Integer.parseInt(JOptionPane.showInputDialog("NumGerente")),
+                                Float.parseFloat(JOptionPane.showInputDialog("SueldoGerente")),
+                                Integer.parseInt(JOptionPane.showInputDialog("telgerente")));
+                        break;
+                    case 3:
+                        trabajador[trabs] = new Ejecutivo(JOptionPane.showInputDialog("Nombre"),
+                                Integer.parseInt(JOptionPane.showInputDialog("IdEmpleado")),
+                                Integer.parseInt(JOptionPane.showInputDialog("Nss")),
+                                (float) Double.parseDouble(JOptionPane.showInputDialog("SalarioMin")
+                                ), (float) Double.parseDouble(JOptionPane.showInputDialog("Impuesto")),
+                                Integer.parseInt(JOptionPane.showInputDialog("NumOficina")),
+                                Integer.parseInt(JOptionPane.showInputDialog("NumEjecutivo")),
+                                Float.parseFloat(JOptionPane.showInputDialog("SueldoEjecutivo")));
+
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Opcion Incorrecta");
+                }
+            } while (opc < 1 || opc > 3);
+
+            trabs = trabs + 1;
+            siguiente = JOptionPane.showConfirmDialog(null, "¿Desea añadir otro Trabajador?", "Recabando informacion",
+                    JOptionPane.YES_NO_OPTION);
+        } while (siguiente == JOptionPane.YES_OPTION);
+
+        for (i = 0; i < trabs; i++) {
+            System.out.print(trabajador[i]);
+            System.out.println(trabajador[i].calcularPago());
+        }
+    }
                 break; 
                     
                                                                                                                                          
