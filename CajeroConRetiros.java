@@ -1,11 +1,20 @@
-class CajeroConRetiros extends Cajero {
+public class CajeroConRetiros extends Cajero {
     private int[] retiros;
     private int contadorRetiros;
 
          public CajeroConRetiros(double saldo) {
                 super(saldo);
+                this.saldo=saldo; 
                 this.retiros = new int[10]; // Por ejemplo, un array de 10 retiros
                 this.contadorRetiros = 0;
+    }
+
+    public double getSaldo(){
+        return saldo; 
+    }
+
+    public void setSaldo(double saldo){
+        this.saldo=saldo; 
     }
 
     public void realizarRetiro(int monto) {
