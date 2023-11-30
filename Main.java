@@ -19,7 +19,7 @@ public class Main{
                     // Ejecutar la acción de la opción 1
                     System.out.println("Has seleccionado el menú para Empleados y Trabajadores del Banco");
                      // Empleado
-                    Empleado[] trabajador = new Empleado[5];
+                     Empleado[] trabajador = new Empleado[5];
         int opc, i, trabs = 0;
         int siguiente;
 
@@ -73,7 +73,6 @@ public class Main{
             System.out.print(trabajador[i]);
             System.out.println(trabajador[i].calcularPago());
         }
-    }
                 break; 
                     
                                                                                                                                          
@@ -140,8 +139,6 @@ public class Main{
                      "\n" + "2. Retirar Dinero: " + "\n" + "3.Depositar Dinero" + "\n" + "4.Salir"));  
                        // Realizar la operación correspondiente
                        switch (control) {
-
-                               //////////////////////////// Realizar los métodos de los case 
                            case 1:
                                //consultarSaldo(); 
                                System.out.println("Hola");
