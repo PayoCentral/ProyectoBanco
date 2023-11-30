@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Cajero {
-    private double saldo;
+    protected double saldo;
 
     public Cajero(double saldoInicial) {
         saldo = saldoInicial;
