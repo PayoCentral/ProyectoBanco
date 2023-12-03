@@ -1,3 +1,5 @@
+import java.util.Random;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -6,6 +8,7 @@ public class Main{
         int opcion = 0;
         int control = 0; 
         int operacion = 0; 
+        double deuda = 0;
             Cuenta[] cuentas = new Cuenta[100];
         int num = 0;
         int continuar;
@@ -131,10 +134,13 @@ public class Main{
             }
             } while (operacion != 3); 
                 case 3:
+                Random aleatorio = new Random();
+                double numeroAleatorio = aleatorio.nextDouble() * 250750.50 + 1000;
+                double pagoDeuda = 0;
                 JOptionPane.showMessageDialog(null, "Ingresa tu tarjeta");
                 System.out.println("Has seleccionado el menú para uso del Cajero, Caja Multiusos y Pago de Servicios"); 
                    do {
-                    control = Integer.parseInt(JOptionPane.showInputDialog("Seleccione una operación de Cajero" + "\n" + "1. Retirar Dinero: " + "\n" + "2.Depositar Dinero" + "\n" + "3.Transferir dinero: " + "\n" + "4.Salir al menú principal" ));  
+                    control = Integer.parseInt(JOptionPane.showInputDialog("Seleccione una operación de Cajero" + "\n" + "1. Retirar Dinero: " + "\n" + "2.Depositar Dinero" + "\n" + "3.Transferir dinero: " + "\n" + "4. Solicitar crédito" + "\n" + "5. Pagar crédito" + "\n" + "6. Salir"));  
                        // Realizar la operación correspondiente
                        switch (control) {
                            case 1:
@@ -162,11 +168,35 @@ public class Main{
                                Retiro af=new Retiro(0.0); 
                                Retiro.TransDinero(ad, ae, af);
                                break;
+                            case 4:
+                                //solicitarCredito();
+                                JOptionPane.showInputDialog("Ingresa tu CURP");
+                                int aceptar = JOptionPane.showConfirmDialog(null, "Te ofrecemos un crédito de " + "$" + numeroAleatorio,"Hemos checado tu historial.", JOptionPane.YES_NO_OPTION);
+                                if(aceptar == JOptionPane.YES_OPTION){
+                                    deuda = numeroAleatorio; }
+                                    else {
+                                        break;
+                                    }
+                                    break;
+                                    
+                            case 5:
+                            pagoDeuda = Float.parseFloat(JOptionPane.showInputDialog(null, "¿Cuánto desea pagar?"));
+                            int eleccionpago = Integer.parseInt(JOptionPane.showInputDialog("Desea pagar con..." + "\n" + "Efectivo" + "\n" + "Saldo de cuenta" + "\n" + "Seleccione 1 para efectivo o cualquier otro número para saldo"));
+                            if (eleccionpago==1) {
+                                JOptionPane.showMessageDialog(null, "Deposite efectivo");
+                                deuda=deuda-pagoDeuda;
+                                JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + deuda);
+                            }
+                            else {
+                                JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + deuda);
+                            }
+                            break;
+                            
                            default:
                                System.out.println("Opción no válida. Inténtelo de nuevo.");
                                break;
                        }
-                   } while (control != 4);
+                   } while (control != 5);
                     break;
                 default:
                 if (opcion==4){
