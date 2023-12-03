@@ -140,7 +140,7 @@ public class Main{
                 JOptionPane.showMessageDialog(null, "Ingresa tu tarjeta");
                 System.out.println("Has seleccionado el menú para uso del Cajero, Caja Multiusos y Pago de Servicios"); 
                    do {
-                    control = Integer.parseInt(JOptionPane.showInputDialog("Seleccione una operación de Cajero" + "\n" + "1. Retirar Dinero: " + "\n" + "2.Depositar Dinero" + "\n" + "3.Transferir dinero: " + "\n" + "4. Solicitar crédito" + "\n" + "5. Pagar crédito" + "\n" + "6. Salir"));  
+                    control = Integer.parseInt(JOptionPane.showInputDialog("Seleccione una operación de Cajero" + "\n" + "1. Retirar Dinero: " + "\n" + "2.Depositar Dinero" + "\n" + "3.Transferir dinero: " + "\n" + "4. Solicitar crédito" + "\n" + "5. Pagar crédito" + "\n" + "6. Consultar Deuda" + "\n" + "7. Salir"));  
                        // Realizar la operación correspondiente
                        switch (control) {
                            case 1:
@@ -185,18 +185,22 @@ public class Main{
                             if (eleccionpago==1) {
                                 JOptionPane.showMessageDialog(null, "Deposite efectivo");
                                 deuda=deuda-pagoDeuda;
-                                JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + deuda);
+                                JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + "$" + deuda);
                             }
                             else {
-                                JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + deuda);
+                                JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + "$" + deuda);
                             }
+                            break;
+                            
+                            case 6:
+                            JOptionPane.showMessageDialog(null, "Tu deuda actual es: " + "$" + deuda);
                             break;
                             
                            default:
                                System.out.println("Opción no válida. Inténtelo de nuevo.");
                                break;
                        }
-                   } while (control != 5);
+                   } while (control != 6);
                     break;
                 default:
                 if (opcion==4){
