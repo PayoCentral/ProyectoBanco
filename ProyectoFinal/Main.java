@@ -188,6 +188,7 @@ public class Main{
                                 JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + "$" + deuda);
                             }
                             else {
+                                JOptionPane.showMessageDialog(null, "Opción no disponible, favor de intentarlo más tarde. ");
                                 JOptionPane.showMessageDialog(null, "Su deuda actual es de: " + "$" + deuda);
                             }
                             break;
@@ -195,12 +196,14 @@ public class Main{
                             case 6:
                             JOptionPane.showMessageDialog(null, "Tu deuda actual es: " + "$" + deuda);
                             break;
+                            case 7:
+                            break; 
                             
                            default:
                                System.out.println("Opción no válida. Inténtelo de nuevo.");
                                break;
                        }
-                   } while (control != 6);
+                   } while (control != 7);
                     break;
                 default:
                 if (opcion==4){
